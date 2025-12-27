@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio UAS Sistem Informasi</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* HEADER - BACKGROUND BIRU */
+        header {
+            background-color: #0d6efd; 
+            padding: 80px 0; /* Diperbesar agar lebih megah */
+            color: white;
+        }
+
+        .brand-title {
+            font-size: 4.5rem; 
+            font-weight: 800;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        /* NAVIGASI - BACKGROUND PUTIH */
+        .custom-nav {
+            background-color: #ffffff;
+            padding: 25px 0; /* Bar diperbesar */
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Shadow lebih lembut agar tidak bergaris tajam */
+        }
+
+        .custom-nav .nav-link {
+            color: #333 !important;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 0 20px;
+            transition: 0.3s;
+        }
+
+        .custom-nav .nav-link:hover {
+            color: #0d6efd !important;
+        }
+
+        /* PERUBAHAN UTAMA: JARAK ANTAR SEKSI (PAGINATION EFFECT) */
+        section {
+            padding: 120px 0; /* Membuat setiap halaman/seksi sangat luas dan tidak berdempetan */
+            min-height: 80vh; /* Memastikan setiap seksi memiliki ruang yang cukup tinggi */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+
+        .hero img {
+            width: 220px;
+            border-radius: 50%;
+            border: 8px solid #0d6efd;
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-bottom: 60px; /* Jarak judul ke isi konten */
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 80px;
+            height: 5px;
+            background: #0d6efd;
+            display: block;
+            margin: 15px auto;
+            border-radius: 5px;
+        }
+        
+        .content-extender {
+            line-height: 2;
+            font-size: 1.15rem;
+            margin-bottom: 30px;
+        }
+
+        /* Membuat card materi lebih besar */
+        .card {
+            border: none;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="text-center">
+    <div class="container">
+        <h1 class="brand-title">Web Profile Dhyno</h1>
+    </div>
+</header>
+
+<nav class="custom-nav sticky-top">
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#materi">Materi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Karya & Proyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" class="hero text-center">
+    <div class="container">
+        <img src="WhatsApp Image 2025-12-15 at 21.53.14.jpeg" alt="Foto Profil">
+        <h1 class="display-4 fw-bold">Seva Dhyno Fazriansyah</h1>
+        <p class="lead fs-3">Mahasiswa Sistem Informasi Semester 1</p>
+        <div class="d-flex justify-content-center gap-4 mt-5">
+            <a href="#portfolio" class="btn btn-primary btn-lg px-5 py-3">Portfolio</a>
+            <a href="#materi" class="btn btn-outline-primary btn-lg px-5 py-3">Materi</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Tentang Saya</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-9 text-center">
+                <p class="content-extender">
+                    Website ini dibuat sebagai proyek Ujian Akhir Semester (UAS) Program Studi Sistem Informasi Semester 1. 
+                    Tujuan utamanya adalah untuk mendemonstrasikan kemampuan teknis dalam merancang antarmuka web yang responsif, modern, dan informatif. 
+                    Setiap elemen di sini dirancang untuk menunjukkan perkembangan saya selama satu semester pertama ini.
+                </p>
+                <p class="content-extender">
+                    Saya memiliki minat besar pada pengembangan teknologi informasi dan analisis sistem. 
+                    Melalui mata kuliah Pemrograman Web, saya belajar bahwa sebuah website bukan hanya sekadar kode, 
+                    tetapi juga tentang bagaimana memberikan pengalaman pengguna (user experience) yang nyaman dan fungsional.
+                </p>
+                <p class="content-extender">
+                    Website ini juga menjadi sarana dokumentasi pembelajaran yang akan terus saya kembangkan di semester berikutnya. 
+                    Ini adalah langkah awal saya untuk menjadi seorang profesional di bidang Sistem Informasi.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container text-center">
+        <h2 class="section-title">Skills & Kompetensi</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-3"><button class="btn btn-outline-primary w-100 py-3 fw-bold">HTML5</button></div>
+            <div class="col-md-3"><button class="btn btn-outline-primary w-100 py-3 fw-bold">CSS3</button></div>
+            <div class="col-md-3"><button class="btn btn-outline-primary w-100 py-3 fw-bold">JavaScript</button></div>
+            <div class="col-md-3"><button class="btn btn-outline-primary w-100 py-3 fw-bold">Bootstrap 5</button></div>
+            <div class="col-md-3"><button class="btn btn-outline-success w-100 py-3 fw-bold">MySQL</button></div>
+            <div class="col-md-3"><button class="btn btn-outline-success w-100 py-3 fw-bold">Database Design</button></div>
+            <div class="col-md-3"><button class="btn btn-outline-success w-100 py-3 fw-bold">ERD Design</button></div>
+            <div class="col-md-3"><button class="btn btn-outline-success w-100 py-3 fw-bold">Flowchart</button></div>
+        </div>
+    </div>
+</section>
+
+<section id="materi" class="bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Materi Semester 1</h2>
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold mb-3">Sistem Informasi</h4>
+                        <p>Memahami konsep dasar informasi, sistem, dan integrasi teknologi dalam manajemen bisnis global.</p>
+                        <hr>
+                        <button class="btn btn-primary">Lihat Silabus</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold mb-3">Basis Data</h4>
+                        <p>Belajar cara merancang database yang efisien, normalisasi data, serta praktik penggunaan SQL.</p>
+                        <hr>
+                        <button class="btn btn-primary">Lihat Silabus</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold mb-3">Web Dev</h4>
+                        <p>Eksplorasi dunia Front-End mulai dari struktur HTML, styling dengan CSS, hingga logika JS.</p>
+                        <hr>
+                        <button class="btn btn-primary">Lihat Silabus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container text-center">
+        <h2 class="section-title">Karya & Proyek</h2>
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="Screenshot (122).png" alt="Web Profil">
+                    <h4 class="mt-4 fw-bold">Web Profil Dasar</h4>
+                    <p class="text-muted">Proyek desain layout HTML/CSS</p>
+                    <a href="home.html" class="btn btn-danger px-4">Buka Proyek</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="Screenshot (123).png" alt="Dialog Box">
+                    <h4 class="mt-4 fw-bold">JS Dialog Box</h4>
+                    <p class="text-muted">Interaktivitas menggunakan JS</p>
+                    <a href="DIALOGBOX.html" class="btn btn-danger px-4">Buka Proyek</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="Screenshot (124).png" alt="CSS Layout">
+                    <h4 class="mt-4 fw-bold">Expert CSS</h4>
+                    <p class="text-muted">Eksperimen 20+ Properti CSS</p>
+                    <a href="TUGASP12.html" class="btn btn-danger px-4">Buka Proyek</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="media" class="bg-light">
+    <div class="container text-center">
+        <h2 class="section-title">Media & Koneksi</h2>
+        <div class="row g-4 mb-5 justify-content-center">
+            <div class="col-md-2"><a href="https://www.instagram.com/sauuurusss" class="btn btn-outline-danger w-100 py-3">Instagram</a></div>
+            <div class="col-md-2"><a href="https://wa.me/6285880066547" class="btn btn-outline-success w-100 py-3">WhatsApp</a></div>
+            <div class="col-md-2"><a href="https://github.com/Semsa467/Seva" class="btn btn-outline-dark w-100 py-3">GitHub</a></div>
+        </div>
+        <div class="row g-5 mt-4 text-start">
+            <div class="col-md-6">
+                <h5 class="fw-bold mb-3">Video Pembelajaran</h5>
+                <iframe width="100%" height="350" src="Apa itu Pemrograman_.mp4" allowfullscreen class="rounded shadow-lg border-0"></iframe>
+            </div>
+            <div class="col-md-6">
+                <h5 class="fw-bold mb-3">Lokasi Kampus</h5>
+                <iframe src="https://www.google.com/maps?q=universitas&output=embed" width="100%" height="350" style="border:0;" allowfullscreen class="rounded shadow-lg"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="text-center section-title">Hubungi Saya</h2>
+        <form class="mx-auto shadow-lg p-5 rounded-4 bg-white" style="max-width:800px;">
+            <div class="row g-3">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold">Nama</label>
+                    <input class="form-control form-control-lg bg-light" placeholder="Nama Lengkap">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold">Email</label>
+                    <input class="form-control form-control-lg bg-light" placeholder="alamat@email.com">
+                </div>
+                <div class="col-md-12 mb-4">
+                    <label class="form-label fw-bold">Pesan Anda</label>
+                    <textarea class="form-control form-control-lg bg-light" rows="6" placeholder="Tuliskan sesuatu..."></textarea>
+                </div>
+            </div>
+            <button class="btn btn-success btn-lg w-100 py-3 fw-bold">Kirim Sekarang</button>
+        </form>
+    </div>
+</section>
+
+<footer class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <p class="mb-2 fs-5 fw-bold">UAS Sistem Informasi Semester 1 © 2025</p>
+        <p class="mb-0 opacity-75">Didesain dengan bangga oleh Seva Dhyno Fazriansyah</p>
+    </div>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
